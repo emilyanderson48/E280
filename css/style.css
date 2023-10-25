@@ -1,51 +1,56 @@
+/* "links" styling (so all navbar labels or anything that is tapped) */
 
 
 a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+a:hover {
     text-decoration: none;
-    color: black;
-    }
-    
-    
-    a:hover {
-    text-decoration: none;
-    }
-    
-    
-    /* navbar STARTS */
-    
-    
-    .label {
+}
+
+
+
+/* navbar STARTS */
+
+
+.label {
     display: inline-block;
     padding: 9.88rem 2rem;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-family: outfit !important;
     line-height: normal;
-    
-    
+
+
     padding-top: 1.56rem;
     padding-bottom: 0.69rem;
     cursor: pointer;
     text-decoration: none;
-    }
-    
-    
-    
-    
-    
-    
-    .label:hover {
-    font-size: 1.65rem;
-    
-    
-    }
-    
-    
-    .active {
+}
+
+/* hover animations below -- keep labels and dropdown items consistent on hover animations*/
+
+.label:hover {
+    font-weight: 550;
+
+}
+
+.dropdown-item:hover {
+    font-weight: 575;
+}
+
+
+.active {
     text-decoration: underline;
-    }
-    
-    
-    .auto1 {
+}
+
+.nav {
+    margin-left: 5.94rem !important;
+    margin-right: 5.94rem !important;
+}
+
+.auto1 {
     background-color: white;
     height: 6rem;
     /* navbar drop shadow */
@@ -56,31 +61,33 @@ a {
     /*
     padding-right: 5.94rem;
     */
-    
-    
+
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
-    
-    
-    .auto2 {
+}
+
+
+.auto2 {
     display: inline-block;
     margin-left: auto;
-    
-    
-    }
-    
-    
-    .logo {
+
+
+}
+
+
+.logo {
     display: inline-flex;
     font-size: 3rem;
     padding-right: 24rem;
-    }
-    
-    
-    .largeLogo {
-    font-size: 8.125rem;
+    text-decoration: none;
+
+}
+
+
+.largeLogo {
+    font-size: 5.125rem;
     font-weight: 400;
     font-style: normal;
     width: 49.5rem;
@@ -90,72 +97,136 @@ a {
     display: inline-block;
     position: relative;
     top: -8.56rem;
-    }
-    
-    
-    
-    
-    /*navbar ENDS*/
-    
-    
-    body {
-    font-family: non-seasonal geo;
+}
+
+
+/* dropdown styling from chat GPT */
+/* Hide the dropdown content */
+.dropdown-content {
+    display: none;
+}
+
+/* Style the dropdown button */
+.dropdown {
+    position: relative;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    padding-left: 1.75rem !important;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    filter: blur(100);
+
+    min-width: 160px;
+    z-index: 1;
+    font-family: outfit;
+    font-size: 1.15rem;
+
+}
+
+/* Style the dropdown items (buttons) */
+.dropdown-item {
+    padding: .5rem !important;
+    text-align: left;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Change the background color of dropdown items on hover */
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+/*navbar ENDS*/
+
+
+body {
+    font-family: outfit;
     font-size: 1.15rem;
     padding: 0;
     margin: 0;
-    }
-    
-    
-    h1 {
+
+}
+
+
+h1 {
     font-size: 2.5rem;
-    }
-    
-    
-    h2 {
+}
+
+
+h2 {
     padding-left: 13.5rem;
     padding-top: 4rem;
     font-size: 2.5rem;
-    }
-    
-    
-    
-    
-    h4 {
+}
+
+
+
+
+h4 {
     font-size: 2rem;
-    
-    
-    }
-    
-    
-    
-    
-    .image {
+
+
+}
+
+
+
+
+.image {
     justify-content: left;
     align-items: center;
-    }
-    
-    
-    
-    
-    .aboutMe {
+}
+
+
+
+
+.aboutMe {
     width: 49.5rem;
     padding-left: 13.5rem;
     padding-top: 4rem;
-    }
-    
-    
-    .homeDescr {
+}
+
+
+.homeDescr {
     width: 49.5rem;
     padding-left: 13.5rem;
     padding-top: 4rem;
-    }
-    
+}
 
-    .footerChunk {
-        position: absolute;
-        bottom: 0;
-        background-color: black;
-        color: white;
-        margin: 0;
 
+.footerChunk {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    margin: 0;
+
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600) {}
+
+@media (min-width:601px) and (max-width: 1024px) {}
+
+@media (min-width:1025px) and (max-width: 1527px) {
+    .nav {
+        margin-left: 3.5rem !important;
+        margin-right: 3.5rem !important;
     }
+}
+
+@media (min-width:1528px) and (max-width: 1557px) {
+    .nav {
+        margin-left: 5rem !important;
+        margin-right: 5rem !important;
+    }
+}
