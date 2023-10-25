@@ -1,37 +1,58 @@
 /* "links" styling (so all navbar labels or anything that is tapped) */
 
+body {
+    font-family: outfit !important;
+}
 
 a {
     text-decoration: none !important;
     color: black !important;
+    text-wrap: none;
 }
 
 a:hover {
     text-decoration: none;
 }
 
+p {
+    font-family: manrope;
+}
 
+p a {
+    color:#1b67d9!important;
+}
 
+p a:hover {
+    text-decoration: underline!important;
+}
+
+h9 {
+    font-size: 1.45rem;
+    font-weight: 550;
+}
 /* navbar STARTS */
 
+#navMargin {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
 
-.label {
+.nav-item {
     display: inline-block;
-    padding: 9.88rem 2rem;
     font-size: 1.25rem;
-    font-family: outfit !important;
     line-height: normal;
-
-
     padding-top: 1.56rem;
-    padding-bottom: 0.69rem;
+    padding-bottom: 1.56rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
     cursor: pointer;
     text-decoration: none;
 }
 
 /* hover animations below -- keep labels and dropdown items consistent on hover animations*/
 
-.label:hover {
+.nav-item:hover {
     font-weight: 550;
 
 }
@@ -73,15 +94,14 @@ a:hover {
     display: inline-block;
     margin-left: auto;
 
-
 }
 
 
 .logo {
-    display: inline-flex;
-    font-size: 3rem;
-    padding-right: 24rem;
+
+    font-size: 2rem!important;
     text-decoration: none;
+    font-family: outfit;
 
 }
 
@@ -113,7 +133,7 @@ a:hover {
 
 /* Style the dropdown content */
 .dropdown-content {
-    padding-left: 1.75rem !important;
+    padding-left: .5rem !important;
     padding-top: 1rem;
     padding-bottom: 2rem;
     position: absolute;
@@ -159,7 +179,7 @@ body {
 
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem!important;
 }
 
 
@@ -187,6 +207,14 @@ h4 {
 }
 
 
+/* blog section START */
+
+.blogSection {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+/* blog section END */
 
 
 .aboutMe {
@@ -217,16 +245,27 @@ h4 {
 
 @media (min-width:601px) and (max-width: 1024px) {}
 
-@media (min-width:1025px) and (max-width: 1527px) {
-    .nav {
-        margin-left: 3.5rem !important;
-        margin-right: 3.5rem !important;
-    }
+
+
+
+@media (min-width:1025px) and (max-width: 1333px) {
+
 }
 
-@media (min-width:1528px) and (max-width: 1557px) {
-    .nav {
-        margin-left: 5rem !important;
-        margin-right: 5rem !important;
-    }
+
+@media (min-width:1334px) and (max-width: 1363px) {
+
+}
+
+@media (min-width:1364) and (max-width: 1464px) {
+
+}
+
+
+@media (min-width:1465) and (max-width: 1528px) {
+
+}
+
+@media (min-width:1529px) and (max-width: 1557px) {
+    
 }
