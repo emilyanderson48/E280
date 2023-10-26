@@ -247,13 +247,27 @@ h11 {
     padding-top: 4rem;
 }
 
+.footerLogo {
+    color: white!important;
+    padding-bottom: 1.25rem;
+}
+.footerLink {
+    color: white!important;
+    padding-bottom: .4rem;
+}
+
+.footerLink:hover {
+    text-decoration: underline!important;
+    cursor: pointer;
+
+}
 
 .footerChunk {
-    position: absolute;
-    bottom: 0!important;
+    margin-top: 6rem!important;
     background-color: black;
-    color: white;
-    margin: 0;
+    padding-left: 5rem!important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 
