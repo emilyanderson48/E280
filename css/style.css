@@ -54,6 +54,19 @@ h9 {
 
 }
 
+.doc {
+   
+    position: abosulte;
+ 
+    left: 60rem !important;
+    right: 10rem !important;
+    width: 50rem;
+    height: 100%;
+    justify-content: center !important;
+    border: .75px #464646 solid;
+
+}
+
 .essayDescr {
     display: inline-flex;
     padding: 1.625rem 2.25rem;
@@ -71,20 +84,13 @@ h9 {
     width: 16.75rem!important;
     height: 16.125rem!important;
 }
-.doc {
-    position: abosulte;
-    left: 60rem !important;
-    right: 10rem !important;
-    width: 50rem;
-    height: 100%;
-    justify-content: center !important;
-    border: .75px #464646 solid;
 
-}
 
 .homeIcon {
-    scale: 40%;
+    scale:40%;
     display: inline-flex;
+    justify-self: center;
+   
 }
 
 .homeIcon:hover {
@@ -221,12 +227,22 @@ h9 {
 
 
 /*navbar ENDS*/
-
+.subHolder {
+    display: flex;
+    align-items: center;
+}
 .subNav {
     display: inline-block;
     margin-top: 0rem;
     margin-left: 5rem !important;
 
+}
+.subNav a:hover {
+    text-decoration: underline!important;
+}
+.subH12 {
+  align-self: center;
+vertical-align: center;
 }
 
 body {
@@ -308,15 +324,116 @@ h12 {
         border: .25px solid blackt;
         border-radius: 0!important;
     }
-    .researchBlob {
-    height: 28.7rem;
-    background-color: #3B4968!important;
+  
+    
+    .mainInfo {
+       
+        height: 40rem;
+    }
+    .mainDescr {
+        margin-left: 10rem;
+        margin-top: 10rem;
+        padding-right: 4rem;
+        
+    }
+
+    .mainImg {
+        background-color: grey!important;
+        height: 30rem;
+        width: 16rem;
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+        
+    
+      }
+   
+    
+    .card-text {
+    width: 100%;
     color: white;
-    text-align: center;
-    /*
-    padding-right: 2.31rem;
-    padding-left: 2.31rem;
-    */
+    }
+    .card-textB {
+        width: 100%;
+        color: black;
+        }
+    
+    h14 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        align-self: center;
+ 
+    }
+    
+    .paperBlurb {
+        padding-top: 1rem;
+    }
+
+    .icon1B {
+        width: 2.081rem!important;
+        height: 2.08094rem!important;
+        align-self: center!important;
+        padding-bottom: .75rem;
+    }
+
+    .cardHeaderB {
+        background-color: #3B4968;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        
+    }
+    
+    /* cards specific to research description on research.html */
+    
+    .researchBox {
+        position: absolute;
+        height: 28.7rem;
+        background-color: #3B4968!important;
+        color: white;
+        text-align: center;
+    }
+    .researchBlobHolder {
+        postion: relative;
+    }
+    .icon1 {
+        width: 2.081rem!important;
+        height: 2.08094rem!important;
+        align-self: center!important;
+        padding-bottom: .75rem;
+  
+    }
+
+    /* original title "researchBlob" */
+    .researchBlob {
+        height: 28.7rem;
+        background-color: #3B4968!important;
+        color: white;
+        text-align: center;
+        /*
+        padding-right: 2.31rem;
+        padding-left: 2.31rem;
+        */
+    
+        }
+
+    .researchBlob a {
+        color: white!important;
+    }
+
+    .researchBlob a:hover {
+        cursor: pointer;
+    }
+
+    .aboutBlob a {
+        color: white!important;
+    }
+
+    .aboutBlob a:hover {
+        cursor: pointer;
+    }
+    .card-body {
+    width: 100%;
 
     }
     
@@ -328,32 +445,20 @@ h12 {
         text-align: center;
         
     }
-    
-    .card-text {
-    width: 100%;
-    color: white;
-    }
-    
-    h14 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        align-self: center;
- 
-    }
-    
-    .researchBlob a {
-        color: white!important;
-    }
 
-    .researchBlob a:hover {
-        cursor: pointer;
+        
+    .cardHeaderC {
+        background-color: #3B4968;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: left;
+        padding-left: 2rem;
+        
     }
-
-    .card-body {
-    width: 100%;
-
-    }
-    
+.cardHeaderC a {
+    color: white!important;
+}
     .cardLinks {
         border-bottom: black .25px solid;
         color: black;
@@ -365,25 +470,52 @@ h12 {
         padding-right: 3rem;
 
     }
+
+    .cardLinksB {
+        border-bottom: black .25px solid;
+        color: black;
+        background-color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: right!important;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
     .contArrow {
         scale: 75%;
        float: right;
       padding-top: .35rem;
     }
+    .contArrowB {
+        scale: 75%;
+       float: right;
+      padding-top: .35rem;
+      padding-left: .5rem;
+    }
     .cardLinks a {
         color: black!important;
     }
-    .icon1 {
-        width: 2.081rem!important;
-        height: 2.08094rem!important;
-        align-self: center!important;
-        padding-bottom: .75rem;
-  
-    }
+    
     
 
 /* blog section START */
+.blogLanding {
+    margin-left: 24rem;
+    margin-right: 24rem;
+}
+.blogLandTitle {
 
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.blogTitle {
+    text-align: center!important;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
 .blogSection {
     margin-left: 10rem;
     margin-right: 10rem;
