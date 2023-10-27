@@ -19,23 +19,77 @@ p {
 }
 
 p a {
-    color:#1b67d9!important;
+    color: #1b67d9 !important;
 }
 
 p a:hover {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
 }
 
 h9 {
     font-size: 1.45rem;
     font-weight: 550;
 }
+
 /* navbar STARTS */
 
 #navMargin {
     margin-left: 5rem;
     margin-right: 5rem;
-    
+
+}
+
+.navbar {}
+
+.docPrev {
+    justify-content: center !important;
+    align-items: center;
+    display: flex !important;
+    position: relative;
+    height: 50rem;
+    background-color: white;
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+
+
+}
+
+.essayDescr {
+    display: inline-flex;
+    padding: 1.625rem 2.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+}
+.essayDescrItem {
+    position: absolute;
+    left: 10rem;
+
+    background: #D9D9D9;
+       
+    width: 16.75rem!important;
+    height: 16.125rem!important;
+}
+.doc {
+    position: abosulte;
+    left: 60rem !important;
+    right: 10rem !important;
+    width: 50rem;
+    height: 100%;
+    justify-content: center !important;
+    border: .75px #464646 solid;
+
+}
+
+.homeIcon {
+    scale: 40%;
+    display: inline-flex;
+}
+
+.homeIcon:hover {
+    cursor: pointer;
+
 }
 
 .nav-item {
@@ -99,7 +153,7 @@ h9 {
 
 .logo {
 
-    font-size: 2rem!important;
+    font-size: 2rem !important;
     text-decoration: none;
     font-family: outfit;
 
@@ -168,6 +222,12 @@ h9 {
 
 /*navbar ENDS*/
 
+.subNav {
+    display: inline-block;
+    margin-top: 0rem;
+    margin-left: 5rem !important;
+
+}
 
 body {
     font-family: outfit;
@@ -179,7 +239,7 @@ body {
 
 
 h1 {
-    font-size: 2rem!important;
+    font-size: 1.75rem !important;
 }
 
 
@@ -204,21 +264,30 @@ h10 {
 }
 
 h11 {
-    font-size: 1rem;
-   
+    font-size: 1.15rem;
+    font-weight: 450;
 
 }
 
+h12 {
+    font: 1rem;
+    font-weight: 300;
+}
 
 .resumeHeaderGroup {
     padding-bottom: .5rem;
     padding-top: .5rem;
 }
+
 .image {
     justify-content: left;
     align-items: center;
 }
 
+.resumeSection p {
+    margin-bottom: .5em;
+
+}
 
 /* blog section START */
 
@@ -226,7 +295,18 @@ h11 {
     margin-left: 10rem;
     margin-right: 10rem;
 }
+
 .resumeSection {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.contactSection {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.essaySection {
     margin-left: 10rem;
     margin-right: 10rem;
 }
@@ -248,24 +328,25 @@ h11 {
 }
 
 .footerLogo {
-    color: white!important;
+    color: white !important;
     padding-bottom: 1.25rem;
 }
+
 .footerLink {
-    color: white!important;
+    color: white !important;
     padding-bottom: .4rem;
 }
 
 .footerLink:hover {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
     cursor: pointer;
 
 }
 
 .footerChunk {
-    margin-top: 6rem!important;
+    margin-top: 6rem !important;
     background-color: black;
-    padding-left: 5rem!important;
+    padding-left: 5rem !important;
     padding-top: 3rem;
     padding-bottom: 3rem;
 
@@ -279,24 +360,14 @@ h11 {
 
 
 
-@media (min-width:1025px) and (max-width: 1333px) {
-
-}
+@media (min-width:1025px) and (max-width: 1333px) {}
 
 
-@media (min-width:1334px) and (max-width: 1363px) {
+@media (min-width:1334px) and (max-width: 1363px) {}
 
-}
-
-@media (min-width:1364) and (max-width: 1464px) {
-
-}
+@media (min-width:1364) and (max-width: 1464px) {}
 
 
-@media (min-width:1465) and (max-width: 1528px) {
+@media (min-width:1465) and (max-width: 1528px) {}
 
-}
-
-@media (min-width:1529px) and (max-width: 1557px) {
-    
-}
+@media (min-width:1529px) and (max-width: 1557px) {}
