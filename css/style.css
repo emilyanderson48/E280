@@ -234,7 +234,7 @@ h9 {
 .subNav {
     display: inline-block;
     margin-top: 0rem;
-    margin-left: 5rem !important;
+    margin-left: 5rem!important;
 
 }
 .subNav a:hover {
@@ -348,6 +348,7 @@ h12 {
       }
    
     
+
     .card-text {
     width: 100%;
     color: white;
@@ -363,6 +364,11 @@ h12 {
         align-self: center;
  
     }
+
+    h18 {
+        font-size: 1rem;
+    }
+    
     
     .paperBlurb {
         padding-top: 1rem;
@@ -487,6 +493,23 @@ h12 {
        float: right;
       padding-top: .35rem;
     }
+
+    .backArrow {
+        scale: 67%;
+       float: left;
+      padding-top: .35rem;
+    }
+
+    .tertNav {
+        margin-left: 6.25rem;
+        padding-top: 2rem;
+    }
+
+    .tertNav:hover { 
+      
+        text-decoration: underline;
+        font-weight: 600;
+    }
     .contArrowB {
         scale: 75%;
        float: right;
@@ -500,6 +523,10 @@ h12 {
     
 
 /* blog section START */
+
+.blogTitle {
+    text-align: center;
+}
 .blogLanding {
     margin-left: 24rem;
     margin-right: 24rem;
